@@ -8,8 +8,8 @@ const {
 const Tesseract = require('tesseract.js');
 
 const TOKEN = process.env.TOKEN;     // 봇 토큰
-const CLIENT_ID = "1490651449074515968";  // Application ID
-const GUILD_ID = "1074232108261834822";   // 서버 ID
+const CLIENT_ID = process.env.CLIENT_ID;
+const GUILD_ID = process.env.GUILD_ID;   // 서버 ID
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds]
